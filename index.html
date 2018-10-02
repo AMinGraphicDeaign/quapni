@@ -19,7 +19,6 @@
   <!--ui large top fixed hidden menu-->
   <body>
     <div class="ui large top fixed hidden menu">
-
       <div class="ui container">
         <a class="item">品牌故事</a>
         <a class="item">商品總覽</a>
@@ -33,7 +32,6 @@
             <a class="ui primary button">註冊</a>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -49,25 +47,31 @@
     <div class="pusher">
       <div class="ui inverted vertical masthead center aligned segment">
         <div class="ui container">
-          <div class="ui large secondary inverted pointing menu">
+          <div class="ui secondary inverted pointing menu ">
+           
               <a class="toc item"><i class="sidebar icon"></i></a>
               <a class="item"><img class="ui tiny image" src="./image/quapni_logo.svg"></a>
+         
               <a class="item">品牌故事</a>
               <a class="item">商品總覽</a>
               <a class="item">商品分類</a>
            
-               <a class="right item">登入</a>
-               <a class="item">註冊</a>
+              <a class="item"><i class="large search icon"></i></a>
+              <a class="item">登入</a>
+              <li class="item">｜</li>
+              <a class="item">註冊</a>
              
-          </div>
-        </div>
-        
+           </div>
+
+
         <div class="ui text container">
           <h1 class="ui inverted header">
-           <b>因為堅持</br>所以最好</b>
+           <b>因為堅持</br>
+              所以最好</b>
           </h1>
         </div>
-      </div>
+      </div> 
+    </div> 
 
       <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid container">
@@ -120,7 +124,7 @@
         </div>
       </div>
       <div class="ui vertical stripe segment">
-        <div class="ui text container">
+        <!-- <div class="ui text container"> -->
           <h3 class="ui header">
             Breaking The Grid, Grabs Your Attention
           </h3>
@@ -138,7 +142,7 @@
             Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
           </p>
           <a class="ui large button">I'm Still Quite Interested</a>
-        </div>
+        <!-- </div> -->
       </div>
       <div class="ui inverted vertical footer segment">
         <div class="ui container">
@@ -172,14 +176,23 @@
       </div>
     </div>
     <script src="./semantic/dist/semantic.min.js"></script>
-    
-    <style type="text/css">
-     
 
+    <style type="text/css">
+
+      .hidden.menu {
+        display: none;
+      }
       .masthead.segment {
+        background-image: url("./image/sweet-ice-cream.jpg")!important;
+        height: 100%!important;
+        background-position: center!important;
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        position: relative!important;
         min-height: 800px;
         padding: 1em 0em;
       }
+      
       .masthead .logo.item img {
         margin-right: 1em;
       }
@@ -197,7 +210,7 @@
         font-size: 1.7em;
         font-weight: normal;
       }
-      
+
       .ui.vertical.stripe {
         padding: 8em 0em;
       }
@@ -217,7 +230,7 @@
       .ui.vertical.stripe .horizontal.divider {
         margin: 3em 0em;
       }
-      
+
       .quote.stripe.segment {
         padding: 0em;
       }
@@ -225,15 +238,15 @@
         padding-top: 5em;
         padding-bottom: 5em;
       }
-      
+
       .footer.segment {
         padding: 5em 0em;
       }
-      
+
       .secondary.pointing.menu .toc.item {
         display: none;
       }
-      
+
       @media only screen and (max-width: 700px) {
         .ui.fixed.menu {
           display: none !important;
@@ -284,7 +297,7 @@
               }
             })
           ;
-      
+
           // create sidebar and attach to menu open
           $('.ui.sidebar')
             .sidebar('attach events', '.toc.item')
