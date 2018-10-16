@@ -1,198 +1,670 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
-    <meta content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." name="description" />
-    <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
-    <meta content="PPType" name="author" />
-    <meta content="#ffffff" name="theme-color" />
-    <title>Quapni</title>
 
-    <link href="./semantic/dist/semantic.min.css" rel="stylesheet" type="text/css" />
-    <link href="./stylesheets/default.css" rel="stylesheet" type="text/css" />
-    <link href="./stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
+  <meta content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." name="description" />
+  <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
+  <meta content="PPType" name="author" />
+  <meta content="#ffffff" name="theme-color" />
+  <title>Quapni</title>
 
-  </head>
-  <!--ui large top fixed hidden menu-->
-  <body>
-    <div class="ui large top fixed hidden menu">
-      <div class="ui container">
-        <a class="item">品牌故事</a>
-        <a class="item">商品總覽</a>
-        <a class="item">商品分類</a>
+  <link href="./semantic/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/default.css" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 
-        <div class="right menu">
-          <div class="item">
-            <a class="ui button">登入</a>
-          </div>
-          <div class="item">
-            <a class="ui primary button">註冊</a>
-          </div>
-        </div>
+</head>
+
+
+<!--ui large top fixed hidden menu-->
+<!--   向 下 拉 動     隱 藏 目 錄   -->
+<body> 
+  <div class="ui fixed hidden menu">
+    <div class="header_content">
+      <div class="header_logo">
+        <img src="./image/quapni_logo.svg" style="width: 150px;">
       </div>
-    </div>
+      <div class="header_navigation hidden_menu_text">      
+          <li><a class="item">品牌故事</a></li>
+          <li><a class="item">商品總覽</a></li>
+          <li class="mega-dropdown" style="text-align: left">
+           <a class="browse item" href="#">商品分類</a> 
+           <div class="megamenu widget center">
+              <div class="hidden_blur"></div>
+              <div class="ui container">
+                <div class="ui five column relaxed equal height divided stackable grid">
+                  
+                  <div class="column">
+                    <h2 class="ui header  header_color">前打輪</h2>
+                    <hr></hr>
+                    <div class="ui link list">
+                      <a class="item menu_text">納茲卡 Nazca</a>
+                      <a class="item menu_text">山茶 Camellia</a>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <h2 class="ui header  header_color">裝備 / 配件</h2>
+                    <hr></hr>
+                    <div class="ui link list">
+                      <a class="item menu_text">碳纖維魚夾</a>
+                      <a class="item menu_text">水深探測棒</a>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <h2 class="ui header  header_color">筏輪</h2>
+                    <hr></hr>
+                    <div class="ui link list">
+                      <a class="item menu_text">筏輪 Quattro</a>
+                    </div>
+                  </div>
 
-    <!--Sidebar Menu-->
-    <div class="ui vertical inverted sidebar menu">
-      <a class="item">品牌故事</a>
-      <a class="item">商品總覽</a>
-      <a class="item">品牌分類</a>
-      <a class="item">登入</a>
-      <a class="item">註冊</a>
-    </div>
-    <!--Page Contents-->
-    <div class="pusher">
-      <div class="ui inverted vertical masthead center aligned segment">
-        <div class="ui container">
-          <div class="ui secondary inverted pointing menu ">
-           
-              <a class="toc item"><i class="sidebar icon"></i></a>
-              <a class="item"><img class="ui tiny image" src="./image/quapni_logo.svg"></a>
-         
-              <a class="item">品牌故事</a>
-              <a class="item">商品總覽</a>
-              <a class="item">商品分類</a>
-           
-              <a class="item"><i class="large search icon"></i></a>
-              <a class="item">登入</a>
-              <li class="item">｜</li>
-              <a class="item">註冊</a>
-             
-           </div>
+                </div>
+              </div>
+            </div>
+          </li>       
+      </div>
+      <div style="margin-right: 30px;">
+          <ul class="nav right">
+            <li><a style="color: black" href="">登入&nbsp｜&nbsp註冊</a></li>
+            <li><a style="color: black" href=""><i class="shopping cart icon"></i></a></li>
+          </ul>
+      </div>  
+     </div> 
+  </div>
+
+  <!--Sidebar Menu-->
+  <!-- <div class="ui vertical inverted sidebar menu">
+    <a class="item">品牌故事</a>
+    <a class="item">商品總覽</a>
+    <a class="item">品牌分類</a>
+    <a class="item">登入</a>
+    <a class="item">註冊</a>
+  </div> -->
 
 
+  <!--Page Contents-->
+  <div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment" style="padding-top:0px;">
+      <div class="header_content">
+
+        <div class="header_logo">
+          <img src="./image/quapni_logo_white.svg"  style="width: 150px;">
+        </div>
+
+        <div class="header_navigation">
+          <ul class="nav">
+            <li><a href="">品牌故事</a></li>
+            <li><a href="">商品總覽</a></li>
+
+            <li class="mega-dropdown" style="text-align: left">
+             <a class="browse item" href="#" style="padding-top: 16px; padding-bottom: 20px;">商品分類</a>
+              <div class="megamenu widget center">
+                <div class="blur"></div>
+                <div class="ui container">
+                  <div class="ui five column relaxed equal height divided stackable grid">
+
+                    <div class="column">
+                      <h2 class="ui header  header_color">前打輪</h2>
+                      <hr></hr>
+                      <div class="ui link list">
+                        <a class="item menu_text">納茲卡 Nazca</a>
+                        <a class="item menu_text">山茶 Camellia</a>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="ui header  header_color">裝備 / 配件</h2>
+                      <hr></hr>
+                      <div class="ui link list">
+                        <a class="item menu_text">碳纖維魚夾</a>
+                        <a class="item menu_text">水深探測棒</a>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="ui header  header_color">筏輪</h2>
+                      <hr></hr>
+                      <div class="ui link list">
+                        <a class="item menu_text">筏輪 Quattro</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div style="margin-right: 30px;">
+          <ul class="nav right">
+            <li><a href="">登入&nbsp｜&nbsp註冊</a></li>
+            <li><a href=""><i class="shopping cart icon"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="ui container">
         <div class="ui text container">
           <h1 class="ui inverted header">
-           <b>因為堅持</br>
+            <b>因為堅持</br>
               所以最好</b>
           </h1>
         </div>
-      </div> 
-    </div> 
-
-      <div class="ui vertical stripe segment">
-        <div class="ui middle aligned stackable grid container">
-          <div class="row">
-            <div class="eight wide column">
-              <h3 class="ui header">
-                We Help Companies and Companions
-              </h3>
-              <p>
-                We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.
-              </p>
-              <h3 class="ui header">
-                We Make Bananas That Can Dance
-              </h3>
-              <p>
-                Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
-              </p>
-            </div>
-            <div class="six wide right floated column">
-              <img class="ui large bordered rounded image" src="../../static/images/templates/semantic-ui/wireframe/white-image.png" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="center aligned column">
-              <a class="ui huge button">Check Them Out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ui vertical stripe quote segment">
-        <div class="ui equal width stackable internally celled grid">
-          <div class="center aligned row">
-            <div class="column">
-              <h3>
-                "What a Company"
-              </h3>
-              <p>
-                That is what they all say about us
-              </p>
-            </div>
-            <div class="column">
-              <h3>
-                "I shouldn't have gone with their competitor."
-              </h3>
-              <p>
-                <img class="ui avatar image" src="../../static/images/templates/semantic-ui/avatar/nan.jpg" /><b>Nan</b>Chief Fun Officer Acme Toys
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ui vertical stripe segment">
-        <!-- <div class="ui text container"> -->
-          <h3 class="ui header">
-            Breaking The Grid, Grabs Your Attention
-          </h3>
-          <p>
-            Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.
-          </p>
-          <a class="ui large button">Read More</a>
-          <h4 class="ui horizontal header divider">
-            <a href="homepage.html#"> Case Studies</a>
-          </h4>
-          <h3 class="ui header">
-            Did We Tell You About Our Bananas?
-          </h3>
-          <p>
-            Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
-          </p>
-          <a class="ui large button">I'm Still Quite Interested</a>
-        <!-- </div> -->
-      </div>
-      <div class="ui inverted vertical footer segment">
-        <div class="ui container">
-          <div class="ui stackable inverted divided equal height stackable grid">
-            <div class="three wide column">
-              <h4 class="ui inverted header">
-                About
-              </h4>
-              <div class="ui inverted link list">
-                <a class="item" href="homepage.html#"> Sitemap</a><a class="item" href="homepage.html#"> Contact Us</a><a class="item" href="homepage.html#"> Religious Ceremonies</a><a class="item" href="homepage.html#"> Gazebo Plans</a>
-              </div>
-            </div>
-            <div class="three wide column">
-              <h4 class="ui inverted header">
-                Services
-              </h4>
-              <div class="ui inverted link list">
-                <a class="item" href="homepage.html#"> Banana Pre-Order</a><a class="item" href="homepage.html#"> DNA FAQ</a><a class="item" href="homepage.html#"> How To Access</a><a class="item" href="homepage.html#"> Favorite X-Men</a>
-              </div>
-            </div>
-            <div class="seven wide column">
-              <h4 class="ui inverted header">
-                Footer Header
-              </h4>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+
+
+    <!-- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+    <!--          幻 燈 片          -->
+    <div class="ui container" style="margin: 150px">
+    <div class="carousel-wrapper">
+
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+
+        <div class="carousel-item item-1">
+          <h1>納茲卡</h1>
+          <a class="arrow arrow-prev" href="#item-3"></a>
+          <a class="arrow arrow-next" href="#item-2"></a>
+        </div>
+        
+        <div class="carousel-item item-2">
+          <h1>前打輪</h1>
+          <a class="arrow arrow-prev" href="#item-1"></a>
+          <a class="arrow arrow-next" href="#item-3"></a>
+        </div>
+        
+        <div class="carousel-item item-3">
+          <h1>納茲卡</h1>
+          <a class="arrow arrow-prev" href="#item-2"></a>
+          <a class="arrow arrow-next" href="#item-1"></a>
+        </div>
+
+    </div>
+   </div>
+  
+   
+
+    <!-- ============================ -->
+    <!--          滾 動 視 差          -->
+      <div class="parallax" style="margin-top: -200px;">
+        <div class="bg1"></div>
+      </div>
+
+      
+     <!-- =========================== -->
+     <!--        卡 片 式 設 計         -->
+      <div class="ui container" style="margin-bottom: 150px;">
+
+          <div class="ui stackable three column grid"  style="margin-top: 150px;">
+              <div class="column grid_padding">
+                 <a class="zoomIn" href="#">
+                  <h2 class="grid_title">這就是我們</h2>
+                  <img src="./image/這就是我們.jpg">
+                 </a>
+              </div>
+              <div class="column grid_padding">
+                <a class="zoomIn">
+                  <h2 class="grid_title">最新商品</h2>
+                  <img src="./image/最新商品.jpg">
+                </a>  
+              </div>
+              <div class="column grid_padding">
+                <a class="zoomIn">
+                  <h2 class="grid_title">商家據點</h2>
+                  <img src="./image/商家據點.jpg">
+                </a>  
+              </div>
+          </div>
+
+          <div class="ui stackable two column grid">
+              <div class="column grid_padding">
+               <a class="zoomIn">
+                <h2 class="grid_title">前打輪</h2>
+                <img src="./image/前打輪.jpg">
+               </a>
+              </div>
+              <div class="column grid_padding">
+               <a class="zoomIn">
+                <h2 class="grid_title">筏輪</h2>
+                <img src="./image/筏輪.jpg">
+               </a> 
+              </div>
+          </div>
+
+      </div>
+  
+
+
+    <!--  底 層 導 覽 列  -->
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+
+          <div class="three wide column">
+            <h4 class="ui inverted header">
+              聯絡資訊
+            </h4>
+            <div class="ui inverted link list">
+              <p>台中市大雅區上山路184號</br>service@quapni.com.tw</br></br>
+                <font size="5"><b>04-25605778</b></font></br>
+                服務時間 09:00-17:00</br>
+                (不含例假日)
+              </p>
+            </div>
+          </div>
+
+          <div class="two wide column">
+            <h4 class="ui inverted header">
+              說明
+            </h4>
+            <div class="ui inverted link list">
+              <a class="item" href="#">得獎認證</a><a class="item" href="#">退貨規則</a><a class="item" href="#">常見問題</a>
+            </div>
+          </div>
+
+          <div class="seven wide column">
+            <h4 class="ui inverted header">
+              服務
+            </h4>
+            <div class="ui inverted link list">
+              <a class="item" href="#">查找商家</a><a class="item" href="#">客服中心</a>
+            </div>
+          </div>
+
+          <div class="three wide column">
+            <h4 class="ui inverted header">
+              相關連結
+            </h4>
+            <div class="ui inverted link list">
+              <a href="#"><img src="./image/ig_icon.svg" style="width: 50px;"></a>
+              <a href="#"><img src="./image/fb_icon.svg" style="width: 50px;"></a>
+              <a href="#"><img src="./image/yt_icon.svg" style="width: 50px;"></a>
+            </div>
+          </div>
+
+          <div class="one wide column">
+            <h4 class="ui inverted header">
+              APP
+            </h4>
+            <div class="ui inverted link list">
+              <a href="#"><img src="./image/app_icon.svg" style="width: 50px;"></a>
+            </div>
+          </div>
+
+          <div style="width:1200px;height:1px;margin:20px auto;padding:0px;background-color:#3F3F3F;overflow:hidden;"></div>
+
+
+        </div>
+
+        <div class="footer_div">
+          <a href="#">隱私政策</a>
+          <a href="#">使用條款</a>
+          <a href="#">Cookie政策</a>
+        </div>
+
+      </div>
+    </div>
+
+
+
     <script src="./semantic/dist/semantic.min.js"></script>
 
+
+    
     <style type="text/css">
+    
+
+       /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+       /*        滾 動 視 差         */
+
+        .parallax [class*="bg"] {
+          height: 30vh;
+          background-attachment: fixed;
+          background-position: bottom;
+          background-size: cover;
+          z-index:-10;
+          position: relative;
+        }
+        /* .parallax [class*="bg"]:nth-child(2n) {
+          box-shadow: inset 0 0 1em #111;
+        } */
+        .bg1 {
+          background-image: url(./image/海面下.jpg);
+        }
+
+
+       /* =============================== */
+       /*     卡 片 式 設 計 _ 微 互 動     */
+
+        .zoomIn{
+          display: grid;
+          overflow: hidden;
+        }   
+
+        .zoomIn img {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+        }
+
+        .zoomIn:hover img {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+
+
+        .grid_title{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          color: white;
+          text-shadow: #3F3F3F 0.1em 0.1em 0.2em;
+        }
+    
+        .grid_padding{
+          padding: 5pt !important;
+        }
+
+
+        /* ================================ */
+        /*     投 影 片 播 放  slideshow     */
+
+        .carousel-wrapper{
+          height: 30rem;
+          max-width: 100%;
+          position: relative;
+          margin:0 auto;
+          box-shadow: 0px 0px 20px #B5B5B5;
+          
+
+        }
+        .carousel-item{
+          position:absolute;
+          top:0;
+          bottom:0;
+          left:0;
+          right:0;
+          padding:25px 50px;
+          opacity:0;
+          transition: all 0.5s ease-in-out;
+        }
+        .arrow{
+          position:absolute;
+          top:0;
+          display:block;
+          width:50px;
+          height:100%;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+          background: url("./image/right_arrow.svg") 50% 50% / 80px no-repeat;
+          -webkit-filter: drop-shadow(1px 1px 2px rgba(3, 43, 43, 0.7));
+          filter: drop-shadow(1px 1px 2px rgba(43, 43, 43, 0.7))
+        }
+
+        .arrow-prev{
+          left:0;
+        }
+        
+        .arrow-next{
+            right:0;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .light{
+          color:white;
+        }
+
+        @media (max-width: 480px) {
+              .arrow, .light .arrow {
+                background-size: 40px;
+                background-position: 10px 50%;
+              }
+            }
+
+
+        /*Select every element*/
+        [id^="item"] {
+          display: none;
+        }
+
+        .item-1 {
+          z-index: 2;
+          opacity: 1;
+          background:url('./image/納茲卡形象頁-04.jpg');
+          background-size:cover;
+        }
+        .item-2{
+          background:url('./image/納茲卡形象頁-05.jpg');
+          background-size:cover;
+        }
+        .item-3{
+          background:url('./image/納茲卡形象頁-06.jpg');
+          background-size:cover;
+        }
+
+        *:target ~ .item-1 {
+          opacity: 0;
+        }
+
+        #item-1:target ~ .item-1 {
+          opacity: 1;
+        }
+
+        #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+          z-index: 3;
+          opacity: 1;
+        }
+
+
+
+      /* ================================== */
+      /* 商 品 分 類    大 目 錄   背 景 特 效 */
+
+      .blur {
+        /* background: url('./image/sweet-ice-cream.jpg') no-repeat center fixed; */
+        background: url('./image/sweet-ice-cream.jpg');
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        
+        filter: blur(20px);
+        -o-filter:blur(20px);
+        -ms-filter:blur(20px);
+        -moz-filter:blur(20px);
+        -webkit-filter:blur(20px);
+
+        position: absolute;
+        height: 700px;
+        width: auto;
+        top: -50px;
+        left: -50px;
+        right: -50px;
+        bottom: -50px;
+      }
+
+      .widget {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .center {
+        position: absolute;
+        margin: auto;
+      }
+
+
+      .menu_text
+      {
+        margin: 0 auto !important;
+        text-align: left !important;
+      }
+
+      .megamenu {
+        /* 如果不要背景模糊，可以自行設定底色 */
+        /* background-color: #ffffff; */
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-top: 40px;
+        padding-bottom: 350px;
+        display: none;
+        margin-top:0px;
+      }
+
+      .mega-dropdown:hover>.megamenu {
+        display: block;
+
+      }
+
+      .header_color
+      {
+        color: aliceblue !important;
+      }
+
+      hr {
+      border: 0;
+      color:white;
+      background-color:rgba(255, 255, 255, 0.7); 
+      height: 6px
+      }
+
+
+       /*   底 層 導 覽 列               */
+       /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+  
+      .footer_div a {
+        float: right !important;
+        margin-left: 30px;
+        color: floralwhite;
+
+      }
+
+
+      .header_navigation {
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        
+      }
+
+      .header_content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        -ms-flex-align: center;
+        align-items: center;
+        min-height: 60px;
+        max-width: auto;
+        margin: auto;
+        
+      }
+
+      .header_logo {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      .nav {
+        border: none;
+        border-width: none;
+        list-style: none;
+        margin: 15;
+        padding: 0;
+        text-align: center;
+        
+      }
+
+      .nav li {
+        display: inline;
+      }
+
+      .nav a {
+        display: inline-block;
+        padding: 0px;
+        margin-right: 30px;
+        margin-left: 30px;
+        color: floralwhite;
+        font-size: 1.4rem;
+        font-weight: 500;
+        
+      }
+
+      .right a {
+        display: inline-block;
+        padding: 0px;
+        margin-right: 15px;
+        margin-left: 15px;
+        color: floralwhite;
+        font-size: 1.4rem;
+        font-weight: 400;
+        
+      }
+ 
+      
+      /*   向 下 拉 動   隱 藏 目 錄   */
+      /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+      .hidden_menu_text{
+        color: black;
+        font-size: 1.4rem;
+        font-weight: 500;
+        list-style-type:none;
+      }
 
       .hidden.menu {
         display: none;
       }
+      
+      .hidden_blur {
+        background-color: rgba(126, 94, 76, 0.96);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        
+        filter: blur(20px);
+        -o-filter:blur(20px);
+        -ms-filter:blur(20px);
+        -moz-filter:blur(20px);
+        -webkit-filter:blur(20px);
+
+        position: absolute;
+        height: 700px;
+        width: auto;
+        top: -50px;
+        left: -50px;
+        right: -50px;
+        bottom: -50px;
+      }
+
+
+    
+
+
+
+
       .masthead.segment {
-        background-image: url("./image/sweet-ice-cream.jpg")!important;
-        height: 100%!important;
-        background-position: center!important;
-        background-repeat: no-repeat!important;
-        background-size: cover!important;
-        position: relative!important;
+        background-image: url("./image/sweet-ice-cream.jpg") !important;
+        height: 100% !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        position: relative !important;
         min-height: 800px;
         padding: 1em 0em;
       }
-      
+
       .masthead .logo.item img {
         margin-right: 1em;
       }
@@ -200,12 +672,14 @@
       .masthead .ui.menu .ui.button {
         margin-left: 0.5em;
       }
+
       .masthead h1.ui.header {
         margin-top: 2em;
         margin-bottom: 0em;
         font-size: 4em;
         font-weight: normal;
       }
+
       .masthead h2 {
         font-size: 1.7em;
         font-weight: normal;
@@ -214,19 +688,24 @@
       .ui.vertical.stripe {
         padding: 8em 0em;
       }
+
       .ui.vertical.stripe h3 {
         font-size: 2em;
       }
-      .ui.vertical.stripe .button + h3,
-      .ui.vertical.stripe p + h3 {
+
+      .ui.vertical.stripe .button+h3,
+      .ui.vertical.stripe p+h3 {
         margin-top: 3em;
       }
+
       .ui.vertical.stripe .floated.image {
         clear: both;
       }
+
       .ui.vertical.stripe p {
         font-size: 1.33em;
       }
+
       .ui.vertical.stripe .horizontal.divider {
         margin: 3em 0em;
       }
@@ -234,6 +713,7 @@
       .quote.stripe.segment {
         padding: 0em;
       }
+
       .quote.stripe.segment .grid .column {
         padding-top: 5em;
         padding-bottom: 5em;
@@ -251,20 +731,25 @@
         .ui.fixed.menu {
           display: none !important;
         }
+
         .secondary.pointing.menu .item,
         .secondary.pointing.menu .menu {
           display: none;
         }
+
         .secondary.pointing.menu .toc.item {
           display: block;
         }
+
         .masthead.segment {
           min-height: 350px;
         }
+
         .masthead h1.ui.header {
           font-size: 2em;
           margin-top: 1.5em;
         }
+
         .masthead h2 {
           margin-top: 0.5em;
           font-size: 1.5em;
@@ -279,31 +764,33 @@
           color: white;
         }
       }
-    </style>
 
+      
+    </style>
+       
 
     <script>
       $(document)
-        .ready(function() {
+        .ready(function () {
           // fix menu when passed
           $('.masthead')
             .visibility({
               once: false,
-              onBottomPassed: function() {
+              onBottomPassed: function () {
                 $('.fixed.menu').transition('fade in');
               },
-              onBottomPassedReverse: function() {
+              onBottomPassedReverse: function () {
                 $('.fixed.menu').transition('fade out');
               }
-            })
-          ;
+            });
 
           // create sidebar and attach to menu open
           $('.ui.sidebar')
-            .sidebar('attach events', '.toc.item')
-          ;
-        })
-      ;
+            .sidebar('attach events', '.toc.item');
+        });
     </script>
-  </body>
+
+
+</body>
+
 </html>

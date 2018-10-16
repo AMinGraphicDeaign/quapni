@@ -14947,14 +14947,14 @@
  .ui.link.list .item,
  .ui.link.list .item a:not(.ui),
  .ui.link.list a.item {
-     color: rgba(0, 0, 0, .4);
+     color: rgba(255, 255, 255, 0.4);
      -webkit-transition: .1s color ease;
      transition: .1s color ease
  }
 
  .ui.link.list.list .item a:not(.ui):hover,
  .ui.link.list.list a.item:hover {
-     color: rgba(0, 0, 0, .8)
+     color: rgba(255, 255, 255, 0.8)
  }
 
  .ui.link.list.list .item a:not(.ui):active,
